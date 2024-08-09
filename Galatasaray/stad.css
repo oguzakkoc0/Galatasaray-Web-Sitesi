@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Borel', cursive;
+  font-family: 'Merriweather', serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  background: url('https://hlkiurt3.rocketcdn.com/globalvariables/3216c77f34e542d0bb70fd4f8e79acd7.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.menub {
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  height: 200px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header nav .logo a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+header nav .logo img {
+  max-height: 150px; 
+  max-width: 100%; 
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  column-gap: 30px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: color .25s ease;
+}
+
+nav ul li a:hover {
+  color: #fdb912;
+}
+
+nav .menu {
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
+}
+
+nav .menu .menu-button {
+  color: #a90432;
+  text-decoration: none;
+  background-color: #fdb912;
+  padding: 12px 24px;
+  border-radius: 56px;
+  transition: all .25s ease;
+}
+
+nav .menu .menu-button:hover {
+  background-color: #a90432;
+  color: white;
+}
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+.gallery {
+  height: 400px;
+  display: flex;
+  gap: 1rem;
+  padding: 100px;
+}
+.gallery > div {
+  flex: 1;
+  border-radius: 1rem;
+  background: var(--i) no-repeat center;
+  background-size: auto 100%;
+  transition: all 0.7s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+}
+.gallery > div:hover {
+  flex: 6;
+}
+p{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+audio::-webkit-media-controls-panel {
+  background-color: #fdb912; 
+}
+audio {
+  width: 100%; 
+  display: block; 
+  margin-top: 0px; 
+}
+.audio-container {
+  margin: 20px auto 0; 
+  max-width: 800px; 
+  width: 100%; 
+  margin-bottom: 50px;
+}

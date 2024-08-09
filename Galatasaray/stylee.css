@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Borel', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    background: url('https://hlkiurt3.rocketcdn.com/globalvariables/3216c77f34e542d0bb70fd4f8e79acd7.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.menub {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    height: 200px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+header nav .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header nav .logo a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+header nav .logo img {
+    max-height: 150px; 
+    max-width: 100%; 
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color .25s ease;
+}
+
+nav ul li a:hover {
+    color: #fdb912;
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+
+nav .menu .menu-button {
+    color: #a90432;
+    text-decoration: none;
+    background-color: #fdb912;
+    padding: 12px 24px;
+    border-radius: 56px;
+    transition: all .25s ease;
+}
+
+nav .menu .menu-button:hover {
+    background-color: #a90432;
+    color: white;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+#sondakika {
+    padding: 50px;
+    text-align: center;
+    height: auto;
+}
+
+.owl-carousel img {
+    max-width: 1600px;
+    height: 600px;
+    border: 5px solid #a90432;
+    border-radius: 50px;
+}
+
+.haber-kartlari {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.haber-karti {
+    width: calc(48% - 20px);
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: all .3s ease-in-out;
+    background: url("img/aslan.jpg");
+}
+
+.haber-karti:hover {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.haber-karti img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.haber-karti h5 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.haber-karti p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+#cikis-btn {
+    color: #a90432;
+    text-decoration: none;
+    background-color: #fdb912;
+    padding: 12px 24px;
+    border-radius: 56px;
+    transition: all .25s ease;
+}
+
+#cikis-btn:hover {
+    background-color: #a90432;
+    color: white;
+}
+.kadro-kartlari {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.kadro-karti {
+    position: relative;
+    width: calc(25% - 10px); 
+    width: 165px;
+    height: 175px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+.kadro-karti img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.kadro-overlay {
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kadro-karti:hover {
+    transform: scale(1.2);
+}
+
+.kadro-karti:hover img {
+    opacity: 0.5;
+}
+
+.kadro-karti:hover .kadro-overlay {
+    opacity: 1;
+}
+.kadro-overlay-top {
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+}

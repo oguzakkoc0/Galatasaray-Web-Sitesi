@@ -1,0 +1,20 @@
+body {
+    background-color: #efefef;
+    border-top: 2px solid #000;
+}
+
+header {
+    margin-top: 20px;
+}
+
+.logo, .menu, .link {
+    color:black;
+}
+
+.logo:hover, .menu:hover, .link:hover {
+    color: #000;
+}
+
+.menu {
+    padding: 5px;
+}
